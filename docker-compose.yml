@@ -1,0 +1,10 @@
+version: "3"
+
+services: 
+  react:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      # nginx의 기본 포트는 80이다.
+    ports: "8080:80"
+    volumes: 
